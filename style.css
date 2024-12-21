@@ -6,15 +6,24 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-div{
+body>div{
     border: 1px solid black;
 }
 .sidebar{
     grid-area: 1 / 1 / 6 / 2;
+    color: white;
+    background-color: skyblue;
+    display: grid;
 }
+
+.sidebar div>div {
+    display: flex;
+}
+
 .header{
     grid-area: 1 / 2 / 2 / 6;
 }
+
 .main{
     grid-area: 2 / 2 / 6 / 6;
 }
